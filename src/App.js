@@ -5,6 +5,7 @@ import ScrollToTop from "./components/wrapper/ScrollToTop"
 function App() {
   return (
     <Router> 
+      /* eslint-disable */
        <ScrollToTop/>
         <Allrouter/>
        
