@@ -1,12 +1,12 @@
 import React from 'react'
 import {useFetch} from "../Hooks/useFetch"
 import { useNavigate } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {  SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import  MovieCard from "../components/MovieCard"
 import { useSearchParams } from 'react-router-dom';
-import {Header,Footer,Craousel} from "../components/index"
+import {Header,Footer} from "../components/index"
 import useTitle from '../Hooks/useTitle';
 function Search({Path,title}) {
   useTitle(title);
@@ -14,7 +14,7 @@ function Search({Path,title}) {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const queryTerm = searchParams.get("q");
-  const { data: movieData, loading, error } = useFetch(url,queryTerm);
+  const { data: movieData} = useFetch(url,queryTerm);
  
   function handleSubmit(event){
     event.preventDefault();

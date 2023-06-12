@@ -119,7 +119,7 @@ function MovieDetails({title}){
                     <div className='md:space-x-6 space-x-4 '> 
                           {  data.genre_ids.map((item) => {
                                  var res =  genresData.find((movieGenres) => (movieGenres.id === item));
-                            <button className='border-2 rounded-full px-2 md:text-base text-sm'>{res && res.name}</button>
+                           return <button className='border-2 rounded-full px-2 md:text-base text-sm'>{res && res.name}</button>
                              }
                             )
                             

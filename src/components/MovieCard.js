@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+
+import {  useNavigate } from 'react-router-dom';
 import 'animate.css';
 
 function MovieCard({item}) {
     const posterPath = `https://image.tmdb.org/t/p/original${item.poster_path}`;
-    const localPath = "../assets/defualt-image.png";
+ 
     const navigate = useNavigate();
     console.log(item);
     console.log(item.eachMovie);

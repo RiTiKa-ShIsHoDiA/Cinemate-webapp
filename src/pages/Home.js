@@ -1,16 +1,10 @@
 import React from 'react'
 import {Header,Footer,Craousel,Main} from "../components/index"
-import {useState,useEffect} from "react"
+
 import useTitle from '../Hooks/useTitle';
 function Home({title}) {
   //const [TrendingMovie,setTrendingMovie] = useState([]);  
-  const [topRatedMovie,setTopRatedMovie] = useState([]);
-  const [TrendingSeries,setTrendingSeries] = useState([]);  
-  const [topRatedSeries,setTopRatedSeries] = useState([]);
-
-  var ratedMovie = [];
-  var trendingSeries = [];
-  var ratedSeries = []
+  
   useTitle(title);
   /*const getdata = async ()=>{
     console.log("chala getdata");
