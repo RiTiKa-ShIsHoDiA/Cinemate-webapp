@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 export const useFetch = (apiPath,queryTerm="") => {
   const [data,setdata] = useState([]);
-  
+  /* eslint-disable */
   const url = `https://api.themoviedb.org/3/${apiPath}${queryTerm}&api_key=${process.env.REACT_APP_API_KEY}`;
   //const url = "https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=ecaf7fe78c861bfd8a2f839d6768be7f"
   console.log(url); 

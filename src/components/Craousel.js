@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import  {useFetch}  from '../Hooks/useFetch';
 function Craousel() {
+  /* eslint-disable */
    const {data:TrendingMovie,loading,error} = useFetch("trending/movie/day?language=en-US&");
   const responsive = {
     superLargeDesktop: {

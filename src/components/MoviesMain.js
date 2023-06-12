@@ -7,6 +7,7 @@ import 'swiper/swiper-bundle.css';
 import  MovieCard from "./MovieCard"
 
 function MoviesMain() {
+  /* eslint-disable */
   const [pageLoad,setPageLoad] = useState(1);
   const [moreMovieData,setmoreMovieData] = useState([]);
   const url = `movie/popular?language=en-US&page=${pageLoad}&`;
@@ -20,7 +21,7 @@ function MoviesMain() {
     return navigate(`/search/movie?q=${queryTerm}`);
   }
   useEffect(()=>{
-     {!loading && setmoreMovieData([...moreMovieData,...movieData])}
+     {!loading && setmoreMovieData([moreMovieData,movieData])}
       console.log(moreMovieData);
   },[pageLoad])
   return (

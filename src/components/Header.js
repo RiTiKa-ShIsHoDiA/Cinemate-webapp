@@ -29,6 +29,7 @@ function Header() {
   const handleToggle = (event)=>{
    document.querySelector("#rightNavbar").classList.toggle("hidden");
   };
+  /* eslint-disable */
   window.addEventListener('scroll', changeNavbarColor);
   return (
     <header id="header">

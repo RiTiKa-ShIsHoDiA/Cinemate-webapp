@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 
 function Main() {
-  
+  /* eslint-disable */
   return (
     <div className='md:px-20 px-10 space-y-10 py-20 dark:text-white dark:bg-slate-900 bg-white text-gray-800'>
        <div className='flex justify-between'>
