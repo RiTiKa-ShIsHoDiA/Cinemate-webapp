@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/cinemateLogo.webp";
-import { NavLink, json } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { useState } from "react";
 function Header() {
   const [colorChange, setColorchange] = useState(false);

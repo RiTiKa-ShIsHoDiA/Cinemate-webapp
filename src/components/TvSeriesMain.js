@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {useFetch} from "../Hooks/useFetch"
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import  MovieCard from "./MovieCard"
@@ -10,7 +10,7 @@ function TvSeriesMain() {
   const [pageLoad,setPageLoad] = useState(1);
   const [moreMovieData,setmoreMovieData] = useState([]);
   const url = `tv/popular?language=en-US&page=1${pageLoad}&`;
-  const { data: movieData, loading, error } = useFetch(url);
+  const { data: movieData, loading} = useFetch(url);
   const navigate = useNavigate();
   const handleSubmit = (event)=>{
     event.preventDefault();

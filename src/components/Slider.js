@@ -8,7 +8,7 @@ import {useFetch} from '../Hooks/useFetch';
 
 function Slider({url}){
  
-  const { data: movieData, loading, error } = useFetch(url);
+  const { data: movieData} = useFetch(url);
   
 
 console.log("slider chala")

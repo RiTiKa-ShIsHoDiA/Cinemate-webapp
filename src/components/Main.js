@@ -1,7 +1,7 @@
 import React from 'react'
 import {useEffect} from "react"
 import Slider from "./Slider"
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import { NavLink } from 'react-router-dom';
