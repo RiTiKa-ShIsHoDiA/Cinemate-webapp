@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+  .animate-nav{
+   @apply hover:border-[#84cc16] hover:border-b-[4px] hover:rounded-sm px-1  duration-200 transition-all ;
+  }
+  .navigate{
+    @apply border-[#84cc16] border-b-[4px] rounded-sm px-1 duration-200 transition-all w-8 ease-linear hover:w-full;
+  }
+  .footerContent{
+    @apply hover:underline hover:underline-offset-2  md:py-2 py-1 duration-200 text-left;
+  }
+  .navbar{
+    @apply fixed z-20  w-full h-16 flex items-center md:pl-24 pl-4 justify-between;
+  }
+ 
+}
+@layer directive{
+  
+}
+#moviesHeader{
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("assets/footer-image-1.jpg");
+  height:7rem;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#footer{
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("assets/footer-image-1.jpg");
+  height:24rem;
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+
+

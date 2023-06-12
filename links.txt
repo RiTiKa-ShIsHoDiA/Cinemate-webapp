@@ -1,0 +1,4 @@
+key  :- ecaf7fe78c861bfd8a2f839d6768be7f
+base url :- "https://api.themoviedb.org/"
+
+search :- 
