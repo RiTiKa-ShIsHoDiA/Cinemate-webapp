@@ -21,7 +21,7 @@ function MoviesMain() {
     return navigate(`/search/movie?q=${queryTerm}`);
   }
   useEffect(()=>{
-     {!loading && setmoreMovieData([moreMovieData,movieData])}
+     {!loading && setmoreMovieData([...moreMovieData,...movieData])}
       console.log(moreMovieData);
   },[pageLoad])
   return (
@@ -57,7 +57,7 @@ function MoviesMain() {
           <div id = "movies" className="grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-col-5 pt-4">
               {
               (moreMovieData!== undefined )&& (moreMovieData.length?moreMovieData:movieData).map((item)=>{
-                return <SwiperSlide><MovieCard item = {{...item,eachMovie:"true"}} /></SwiperSlide>
+                return <SwiperSlide><MovieCard item = {{...item}} /></SwiperSlide>
               }
               )
               

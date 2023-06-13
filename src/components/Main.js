@@ -1,5 +1,4 @@
 import React from 'react'
-import {useEffect} from "react"
 import Slider from "./Slider"
 
 import 'swiper/css';

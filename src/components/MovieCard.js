@@ -3,10 +3,11 @@ import {  useNavigate } from 'react-router-dom';
 import 'animate.css';
 
 function MovieCard({item}) {
-    const posterPath = `https://image.tmdb.org/t/p/original${item.poster_path}`;
- 
+  console.log(item);
+    const posterPath =  `https://image.tmdb.org/t/p/original${item.poster_path}`;
+     
     const navigate = useNavigate();
-    console.log(item);
+    console.log(posterPath);
     console.log(item.eachMovie);
     function handleClick(){
       return navigate(`/moviesDetails/${item.id}`,{state:{data:{...item}}})
@@ -16,7 +17,7 @@ function MovieCard({item}) {
    
     <div className='w-48 h-56 rounded-md group  '>
       
-    {item.poster_path === null ? <img src = {require("../assets/nature.jpg")} alt = "poster movie" width="500" height="700" className='h-72 rounded-md w-100 animate__animated animate__fadeInBottomRight animate__slow'/>: <img src = {posterPath} alt = "poster movie" className='w-100 h-100 rounded-md animate__animated animate__fadeInBottomRight animate__slow'/>} 
+    {item.poster_path === null || undefined ? <img src = {require("../assets/nature.jpg")} alt = "poster movie" width="500" height="700" className='h-72 rounded-md w-100 animate__animated animate__fadeInBottomRight animate__slow'/>: <img src = {posterPath} alt = "poster movie" className='w-100 h-100 rounded-md animate__animated animate__fadeInBottomRight animate__slow'/>} 
      
         <div className='hidden  group-hover:bg-black group-hover:block group-hover:bg-opacity-40 w-48 h-72 rounded-md  absolute top-0 text-[#68fc23] cursor-pointer'>
         <div className = "flex justify-center  items-center h-full">
