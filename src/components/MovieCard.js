@@ -5,7 +5,7 @@ import 'animate.css';
 function MovieCard({item}) {
   console.log(item);
     const posterPath =  `https://image.tmdb.org/t/p/original${item.poster_path}`;
-     
+    
     const navigate = useNavigate();
     console.log(posterPath);
     console.log(item.eachMovie);

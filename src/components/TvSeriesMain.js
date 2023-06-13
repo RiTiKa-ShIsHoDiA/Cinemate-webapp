@@ -20,8 +20,10 @@ function TvSeriesMain() {
     return navigate(`/search/tv?q=${queryTerm}`);
   }
   useEffect(()=>{
+     //eslint-disable-next-line
      {!loading && setmoreMovieData([...moreMovieData,...movieData])}
       console.log(moreMovieData);
+       //eslint-disable-next-line
   },[pageLoad])
   return (
     <div className="dark:bg-slate-900 dark:text-white p-4">
