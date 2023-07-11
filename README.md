@@ -8,9 +8,9 @@ screenshots :-
 <img width="940" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/e28e01a6-3b0a-4b6f-b64b-28251c989637">
 <img width="935" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/5fdb0c02-1f70-48db-b781-7ad8f896e4a0">
 <img width="935" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/5ae778e6-66f1-45a7-a837-cd6973b74c77">
-<img width="430" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/b3dff979-9a3d-4b04-9d04-784129892019">
-<img width="430" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/6cd9395b-0382-463e-9947-1b149685eaa1">
-<img width="430" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/44c13344-c400-48d1-837a-de4eee57e017">
+<img width="400" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/b3dff979-9a3d-4b04-9d04-784129892019">
+<img width="400" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/6cd9395b-0382-463e-9947-1b149685eaa1">
+<img width="400" alt="image" src="https://github.com/RiTiKa-ShIsHoDiA/Cinemate-webapp/assets/122371758/44c13344-c400-48d1-837a-de4eee57e017">
 
 
 
